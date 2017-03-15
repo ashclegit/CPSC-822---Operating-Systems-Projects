@@ -1,0 +1,30 @@
+// Course:  CPSC 8220 - Spring 2017
+// Project: #1 - Device Driver
+// Team Members:
+//    Ashwin Kumar Vajantri [aashwin@g.clemson.edu]
+//    Kunwar Deep Singh Toor [ktoor@g.clemson.edu]
+//    Matthew Pfister [mpfiste@g.clemson.edu]
+//    Rohith Raju [rraju@g.clemson.edu]
+//    Saroj Kumar Dash [sdash@g.clemson.edu]
+//    Vishnuprabhu Thirugnanasambandam [vthirug@g.clemson.edu]
+
+// Description of Device Driver:
+//    Device driver for the Kyouko3 PCIe graphics card
+//    featuring the ability to issue commands to draw triangles
+//    via the FIFO queue and DMA buffers.
+
+// Description of Shared Header:
+//    Shared header for the Kyouko3 PCIe graphics card driver.
+
+// Description of User Code:
+//    User code for issuing commands to the Kyouko3 PCIe graphics card
+//    in order to draw triangles.
+
+// Usage:
+//    To draw a triangle with commands issued through the FIFO,
+//    run the program with a command-line argument of 0 (or no argument).
+//
+//    To draw 50,000 triangles with commands issued through DMA buffers,
+//    run the program with a command-line argument of 1. The commands are
+//    separated across 50 DMA buffer requests, each buffer holding the commands
+//    to draw 1,000 triangles.
